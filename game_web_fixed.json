@@ -1,0 +1,3108 @@
+{
+  "firstLayout": "Evolutionarium",
+  "gdVersion": {
+    "build": 279,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": false,
+    "orientation": "landscape",
+    "packageName": "com.example.evolutionarium",
+    "pixelsRounding": false,
+    "projectUuid": "79f36bcb-a53e-4b28-8e0b-7eae4499950f",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "version": "0.2.0",
+    "name": "Evolutionarium V2 Illustrated — Layer Fix",
+    "description": "Playable 8x8 match-3 native GDevelop sprites + real painted PNG assets, hidden tile exploration, DNA evolution, elite boss and relics.",
+    "author": "",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 1774350,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 0.4,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": false
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [
+      "keyboard",
+      "mouse",
+      "touch"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "name": "evo_bg_table_full.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_bg_table_full.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_board_frame.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_board_frame.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_tile_hidden_web.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_tile_hidden_web.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_tile_open_parchment.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_tile_open_parchment.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_blue_potion.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_blue_potion.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_bomb.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_bomb.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_chest.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_chest.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_exit.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_exit.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_green_leaf.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_green_leaf.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_key.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_key.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_purple_moth.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_purple_moth.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_red_gem.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_red_gem.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_piece_yellow_amber.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_piece_yellow_amber.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_enemy_scorpion.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_enemy_scorpion.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_enemy_spider.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_enemy_spider.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_ui_logo_panel.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_ui_logo_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_ui_relics_panel.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_ui_relics_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_ui_specimen_panel.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_ui_specimen_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_ui_stats_panel.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_ui_stats_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_ui_status_panel.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_ui_status_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_btn_continue.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_btn_continue.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_btn_help.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_btn_help.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_btn_new_run.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_btn_new_run.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_btn_scout.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_btn_scout.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "evo_btn_sound.png",
+        "file": "https://raw.githubusercontent.com/mickalaykorolyov-bit/Evolutionarium/main/assets/evo_btn_sound.png",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "b": 24,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Evolutionarium",
+      "name": "Evolutionarium",
+      "r": 22,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "Evolutionarium",
+      "v": 20,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.8,
+        "windowMask": false,
+        "selectedLayer": "Tiles",
+        "gameEditorMode": "instances-editor"
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1080,
+          "layer": "BG",
+          "name": "BG",
+          "persistentUuid": "e07d103e-1131-4c1b-93f5-37ee02fef6fe",
+          "width": 1920,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1020,
+          "layer": "Frame",
+          "name": "BoardFrame",
+          "persistentUuid": "b3ea931c-af8d-4b17-b338-cda09ef824f9",
+          "width": 1020,
+          "x": 86,
+          "y": 15,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 177,
+          "layer": "UI",
+          "name": "Logo",
+          "persistentUuid": "a2ff24fe-109e-4be1-b885-9a86f2f72918",
+          "width": 660,
+          "x": 1180,
+          "y": 12,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 460,
+          "layer": "UI",
+          "name": "StatsPanel",
+          "persistentUuid": "93d416f0-ded7-495c-a1f9-3c9792a26037",
+          "width": 300,
+          "x": 1185,
+          "y": 200,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 355,
+          "layer": "UI",
+          "name": "SpecimenPanel",
+          "persistentUuid": "d0779720-43cf-4e98-89f2-8174b918301b",
+          "width": 355,
+          "x": 1493,
+          "y": 200,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 146,
+          "layer": "UI",
+          "name": "RelicsPanel",
+          "persistentUuid": "9efe3d78-096c-4ab7-b83b-c91e2dbd3999",
+          "width": 355,
+          "x": 1493,
+          "y": 565,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 132,
+          "layer": "UI",
+          "name": "StatusPanel",
+          "persistentUuid": "2c971f1f-e6a3-4845-ad95-572d1e482bce",
+          "width": 681,
+          "x": 1173,
+          "y": 910,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 94,
+          "layer": "Buttons",
+          "name": "BtnScout",
+          "persistentUuid": "50833118-22e4-4fe6-91ef-6702b2ab7cca",
+          "width": 305,
+          "x": 1190,
+          "y": 725,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 94,
+          "layer": "Buttons",
+          "name": "BtnContinue",
+          "persistentUuid": "2346a6f6-2429-41bd-afaf-59c43e5abd50",
+          "width": 345,
+          "x": 1504,
+          "y": 725,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 95,
+          "layer": "Buttons",
+          "name": "BtnNew",
+          "persistentUuid": "020e0015-e6ce-435a-a939-465654a6fbcf",
+          "width": 193,
+          "x": 1193,
+          "y": 835,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 95,
+          "layer": "Buttons",
+          "name": "BtnSound",
+          "persistentUuid": "803939bc-ac7c-44b8-8e5d-d88dee2f6228",
+          "width": 193,
+          "x": 1405,
+          "y": 835,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 95,
+          "layer": "Buttons",
+          "name": "BtnHelp",
+          "persistentUuid": "3be2b5a3-187c-4380-b7ff-34ee2b4459d4",
+          "width": 235,
+          "x": 1613,
+          "y": 835,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "3900c62f-90f1-4fe7-a7ec-d71218080b69",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 175.0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "047d6887-3d91-456d-b21a-945543fc682d",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 175.0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "114a67d3-e21e-423b-a9a2-eec28397c664",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 175.0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "58537ec4-5053-4a19-b718-1adb52b820ee",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 175.0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "1d2e5aa6-edd1-49d7-89d0-e19cfdbea8c9",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 175.0,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "84f0d6da-805f-44bf-8ade-3b147a69e372",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 175.0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "3a5531ad-15ef-407e-af90-12e5e27e46c2",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 175.0,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "e5434836-7214-4adb-949b-f67db6813a82",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 175.0,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "bf061135-f2c1-436e-8e82-bf8a895948c8",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 277.45,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "fc02e6a1-757e-4d39-a05c-dc93c9f308db",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 277.45,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "196f2407-9675-46c2-a6b7-6faf74a222a2",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 277.45,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "4c9a117e-0d67-404a-9713-ef437e985298",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 277.45,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "256ec58a-357a-40c6-a27e-6896a04a1369",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 277.45,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "edfecc08-e6de-4340-abdb-d16537c727b7",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 277.45,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "377fbafd-6ca4-4f26-94ca-eebace521f6f",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 277.45,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "8a272566-1a4b-40a4-9671-2619de15da55",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 277.45,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "5eac99ac-5a20-4bcb-b751-22c59f6d268f",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 379.9,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "15f14ee7-96ba-4d93-b239-e218a31b52a1",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 379.9,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "86dabb31-014e-4b0a-bcc0-911841e4477d",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 379.9,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "5fd6f805-6972-48e6-8f77-c45e255be0b8",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 379.9,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "53c278ab-ef13-4324-bf6e-cc38a3029bcf",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 379.9,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "0a5557cc-7761-4162-a315-256c9f6c5dbc",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 379.9,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "39aec92a-6a32-4b03-9e97-3a8eb6bf2040",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 379.9,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "8baf53ea-d4a4-4d2f-87a7-52348a9048d4",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 379.9,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "c58e64ec-ddc8-426a-8e8c-41587e4d5aae",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 482.35,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "83f0a1fb-6adf-499d-b955-3f1f52d2e993",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 482.35,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "983677ed-80e1-42a0-b020-1da70080d5dc",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 482.35,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "47a54fc4-f7ff-43ce-9f73-ce7caf0d765e",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 482.35,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "89539c0b-c3cc-4f08-a444-f31c2ce5c453",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 482.35,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "2a3393b8-af08-4a23-a122-4c3e4fed7a14",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 482.35,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "6d80a034-843c-423f-a27c-27b419270e70",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 482.35,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "5f77d211-7be3-442f-ae7c-c1e5fd516916",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 482.35,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "559f8845-c639-47a4-a4d4-ed6d862b0d43",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 584.8,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "bc494c9d-ada7-49a4-a1ea-aa16af253dcf",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 584.8,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "8523e0de-94b9-435e-8ca8-35631a9a7513",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 584.8,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "143a3dd0-412c-405c-b215-052837b44b31",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 584.8,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "0b71981f-038a-4c5f-b5f2-c4f9a334743b",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 584.8,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "f484251a-fbdb-4431-a16a-42efbac6725e",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 584.8,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "5aceb08d-c394-4239-b1ae-76bc49fac502",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 584.8,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "091fa885-97a1-46f1-9d8b-c48a4544b56c",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 584.8,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "cbad557e-5539-40cc-a2b5-8802c524d66d",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 687.25,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "b38c0d01-c046-49f2-b101-b4709dbdaa7b",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 687.25,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "37616c57-6531-4e51-80f5-55aec925154f",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 687.25,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "b2a8034f-2c8d-4070-bbae-251352c433bb",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 687.25,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "eee72cae-cf18-4fee-9069-b597a9ce161e",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 687.25,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "8d4c6a4f-9d82-4601-b2a5-d969e07226db",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 687.25,
+          "zOrder": 45,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "b84f1531-9f39-4481-8b42-7aa525fd64da",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 687.25,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "daa7a4d7-6b2e-44c9-99e9-d83a8ab26997",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 687.25,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "a9576c5e-8025-4de5-95e4-6ffea391db16",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 789.7,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "e8753662-31a4-46f4-a1af-1e30bee3a439",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 789.7,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "58631424-432b-4693-8904-581366fe34d3",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 789.7,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "61bb1754-a9f4-4340-b08f-96e82838a290",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 789.7,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "3298a1bb-ad85-4043-96d0-ac67671bf8cb",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 789.7,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "de755b63-bd2f-4e99-b65d-0d87b40189c6",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 789.7,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "3bde1a7b-deb4-4e92-a347-fa8371039b80",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 789.7,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "a5d6cd54-f4f6-441b-b5fc-5660f44b047e",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 789.7,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "f4956788-b895-4c09-890e-e666ef959108",
+          "width": 91.5,
+          "x": 193.0,
+          "y": 892.15,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "8e34ae53-35d9-4f23-ac7a-1be7e3628647",
+          "width": 91.5,
+          "x": 295.45,
+          "y": 892.15,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "344e4d74-e15f-40a1-87e0-ddc76a19a14e",
+          "width": 91.5,
+          "x": 397.9,
+          "y": 892.15,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "05132dfc-2382-4992-9ba4-118ee3dcfe84",
+          "width": 91.5,
+          "x": 500.35,
+          "y": 892.15,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "c432f48b-af8d-4f7a-8c61-16959baf5980",
+          "width": 91.5,
+          "x": 602.8,
+          "y": 892.15,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "ff4015f7-9018-49c7-9bba-a5a1c6d0a000",
+          "width": 91.5,
+          "x": 705.25,
+          "y": 892.15,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "7ee5c8eb-d957-4c4a-a7f9-69fa47418d6b",
+          "width": 91.5,
+          "x": 807.7,
+          "y": 892.15,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91.5,
+          "layer": "Tiles",
+          "name": "Cell",
+          "persistentUuid": "db952bb9-98e8-42f9-b053-1d09e2f7429a",
+          "width": 91.5,
+          "x": 910.15,
+          "y": 892.15,
+          "zOrder": 63,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "BG",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "bg_table_full",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_bg_table_full.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BoardFrame",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "board_frame",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_board_frame.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Cell",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Hidden",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_tile_hidden_web.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_tile_open_parchment.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Piece",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Red",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_red_gem.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blue",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_blue_potion.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_green_leaf.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Yellow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_yellow_amber.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Purple",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_purple_moth.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Chest",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_chest.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Bomb",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_bomb.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Key",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_key.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Exit",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_exit.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Rocket",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_red_gem.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Prism",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_piece_purple_moth.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Enemy",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Spider",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_enemy_spider.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Scorpion",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_enemy_scorpion.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Logo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "ui_logo_panel",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_ui_logo_panel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "StatsPanel",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "ui_stats_panel",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_ui_stats_panel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "SpecimenPanel",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "ui_specimen_panel",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_ui_specimen_panel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "RelicsPanel",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "ui_relics_panel",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_ui_relics_panel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "StatusPanel",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "ui_status_panel",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_ui_status_panel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BtnScout",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "btn_scout",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_btn_scout.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BtnContinue",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "btn_continue",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_btn_continue.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BtnNew",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "btn_new_run",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_btn_new_run.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BtnSound",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "btn_sound",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_btn_sound.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BtnHelp",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "btn_help",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "evo_btn_help.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EvoText",
+          "tags": "",
+          "type": "TextObject::Text",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "smoothed": true,
+          "color": "58;38;20",
+          "characterSize": 24,
+          "font": "",
+          "text": "",
+          "outlineSize": 0,
+          "outlineColor": "0;0;0",
+          "shadow": false,
+          "shadowBlurRadius": 0,
+          "shadowColor": "0;0;0",
+          "shadowOffsetX": 0,
+          "shadowOffsetY": 0,
+          "shadowOpacity": 0
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Evolutionarium V2 native GDevelop runtime. Gameplay and presentation use GDJS Sprite/Text objects.",
+            "// This event runs every frame. No DOM overlay or external script dependencies.",
+            "(function () {",
+            "  const rs = runtimeScene;",
+            "  const input = gdjs.evtTools.input;",
+            "  const S = rs.__evoV2 || (rs.__evoV2 = {});",
+            "  const choose = arr => arr[Math.floor(Math.random()*arr.length)];",
+            "  const ix=(r,c)=>r*8+c, R=i=>Math.floor(i/8), C=i=>i%8;",
+            "  const adjacent=(a,b)=>Math.abs(R(a)-R(b))+Math.abs(C(a)-C(b))===1;",
+            "  const COLORS=['red','blue','green','yellow','purple'];",
+            "  const GEM={red:0,blue:1,green:2,yellow:3,purple:4};",
+            "  const GRID_X=193, GRID_Y=175, PITCH=102.45, SZ=91.5;",
+            "  const POS=i=>({x:GRID_X+C(i)*PITCH,y:GRID_Y+R(i)*PITCH});",
+            "  function playSfx(kind){",
+            "    if(!S.sound || typeof window==='undefined')return;",
+            "    try{",
+            "      const A=window.AudioContext||window.webkitAudioContext;if(!A)return;",
+            "      S.audio=S.audio||new A();",
+            "      if(S.audio.state==='suspended')S.audio.resume();",
+            "      const now=S.audio.currentTime,o=S.audio.createOscillator(),gain=S.audio.createGain();",
+            "      const f=kind==='hit'?145:kind==='evolve'?550:kind==='match'?490:kind==='reveal'?730:360;",
+            "      o.type=kind==='hit'?'triangle':'sine';o.frequency.setValueAtTime(f,now);",
+            "      o.frequency.exponentialRampToValueAtTime(f*(kind==='hit'?.66:1.3),now+.12);",
+            "      gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(.038,now+.012);",
+            "      gain.gain.exponentialRampToValueAtTime(.0001,now+.15);",
+            "      o.connect(gain);gain.connect(S.audio.destination);o.start(now);o.stop(now+.18);",
+            "    }catch(e){}",
+            "  }",
+            "",
+            "  function clearObjects(names){for(const name of names)for(const obj of [...rs.getObjects(name)])rs.markObjectForDeletion(obj)}",
+            "  function spr(name,x,y,w,h,layer='UI',z=0,anim=null){",
+            "    const ob=rs.createObject(name); if(!ob)return null;",
+            "    if(anim!==null)ob.setAnimationIndex(anim);",
+            "    ob.setPosition(x,y); ob.setSize(w,h); ob.setLayer(layer); ob.setZOrder(z); return ob;",
+            "  }",
+            "  function txt(message,x,y,size=25,color='53;36;24',layer='Labels',z=10){",
+            "    const ob=rs.createObject('EvoText');if(!ob)return null;",
+            "    ob.setText(String(message));ob.setPosition(x,y);ob.setLayer(layer);ob.setZOrder(z);",
+            "    ob.setCharacterSize(size);ob.setColor(color);return ob;",
+            "  }",
+            "  function bg(){",
+            "    clearObjects(['BG','BoardFrame','Logo','StatsPanel','SpecimenPanel','RelicsPanel','StatusPanel','BtnScout','BtnContinue','BtnNew','BtnSound','BtnHelp']);",
+            "    spr('BG',0,0,1920,1080,'BG',0);",
+            "    spr('BoardFrame',86,15,1020,1020,'Frame',0);",
+            "    spr('Logo',1180,12,660,177,'UI',0);",
+            "    spr('StatsPanel',1185,200,300,460,'UI',0);",
+            "    spr('SpecimenPanel',1493,200,355,355,'UI',0);",
+            "    spr('RelicsPanel',1493,565,355,146,'UI',0);",
+            "    spr('StatusPanel',1173,910,681,132,'UI',0);",
+            "    spr('BtnScout',1190,725,305,94,'Buttons',0);",
+            "    spr('BtnContinue',1504,725,345,94,'Buttons',0);",
+            "    spr('BtnNew',1193,835,193,95,'Buttons',0);",
+            "    spr('BtnSound',1405,835,193,95,'Buttons',0);",
+            "    spr('BtnHelp',1613,835,235,95,'Buttons',0);",
+            "  }",
+            "  function resetCells(){",
+            "    S.cells=[];",
+            "    for(let i=0;i<64;i++){",
+            "      let open=R(i)>=2&&R(i)<=5&&C(i)>=2&&C(i)<=5;",
+            "      S.cells.push({open,type:open?'gem':'hidden',color:open?choose(COLORS):null,special:null,payload:null,hp:0,timer:0,kind:null,scout:null});",
+            "    }",
+            "  }",
+            "  function gem(i){return S.cells[i]&&S.cells[i].open&&S.cells[i].type==='gem'&&!S.webbed.has(i)}",
+            "  function color(i){return gem(i)&&S.cells[i].special!=='prism'?S.cells[i].color:null}",
+            "  function groups(){",
+            "    let out=[];",
+            "    for(let r=0;r<8;r++){let c=0;while(c<8){let col=color(ix(r,c));if(!col){c++;continue}let e=c+1;while(e<8&&color(ix(r,e))===col)e++;if(e-c>=3)out.push({ids:Array.from({length:e-c},(_,k)=>ix(r,c+k)),len:e-c,col,dir:'h'});c=e}}",
+            "    for(let c=0;c<8;c++){let r=0;while(r<8){let col=color(ix(r,c));if(!col){r++;continue}let e=r+1;while(e<8&&color(ix(e,c))===col)e++;if(e-r>=3)out.push({ids:Array.from({length:e-r},(_,k)=>ix(r+k,c)),len:e-r,col,dir:'v'});r=e}}",
+            "    return out;",
+            "  }",
+            "  function legalSwap(){",
+            "    for(let a=0;a<64;a++)if(gem(a))for(const b of [a+1,a+8]){",
+            "      if(b>=64||!adjacent(a,b)||!gem(b))continue;",
+            "      if(S.cells[a].special==='prism'||S.cells[b].special==='prism')return true;",
+            "      const ta=S.cells[a].color;S.cells[a].color=S.cells[b].color;S.cells[b].color=ta;",
+            "      const ok=groups().length>0;",
+            "      const tb=S.cells[a].color;S.cells[a].color=S.cells[b].color;S.cells[b].color=tb;",
+            "      if(ok)return true;",
+            "    }",
+            "    return false;",
+            "  }",
+            "  function shuffle(){",
+            "    const ids=S.cells.map((c,i)=>gem(i)?i:-1).filter(i=>i>=0);",
+            "    for(let t=0;t<250;t++){for(const i of ids){S.cells[i].color=choose(COLORS);S.cells[i].special=null;}if(!groups().length&&legalSwap())return;}",
+            "  }",
+            "  function placeHidden(){",
+            "    const hidden=S.cells.map((c,i)=>!c.open?i:-1).filter(i=>i>=0);",
+            "    const used=new Set();",
+            "    function place(payload,preferred=null){",
+            "      let pos=(preferred!==null&&!used.has(preferred))?preferred:choose(hidden.filter(i=>!used.has(i)));",
+            "      S.cells[pos].payload=payload;used.add(pos);",
+            "    }",
+            "    place('key',ix(1,3));place('exit',ix(6,4));",
+            "    place('enemy:spider',ix(1,4));place('enemy:scorpion',ix(6,3));",
+            "    for(const t of ['chest','chest','bomb','bomb','relic'])place(t);",
+            "  }",
+            "  function beginExplore(){",
+            "    S.phase=0;S.moves=32;S.turn=0;S.key=false;S.exit=false;",
+            "    S.reveals=0;S.webbed=new Set();resetCells();placeHidden();shuffle();",
+            "    S.info='Збирай Match-3 біля прихованих клітин. Шукай Key + Exit.';",
+            "    redraw();",
+            "  }",
+            "  function beginElite(){",
+            "    S.phase=1;S.moves=Math.max(S.moves,23);S.turn=0;S.webbed=new Set();",
+            "    S.cells=Array.from({length:64},()=>({open:true,type:'gem',color:choose(COLORS),special:null,payload:null,hp:0,timer:0,kind:null,scout:null}));",
+            "    shuffle();S.cells[ix(3,3)]={open:true,type:'enemy',color:null,special:null,payload:null,hp:65,timer:0,kind:'elite',scout:null};",
+            "    S.eliteHp=65;S.info='ELITE: Silk Matriarch. Червоні матчі б’ють ворога.';redraw();",
+            "  }",
+            "  function beginBoss(){",
+            "    S.phase=2;S.moves=Math.max(S.moves,30);S.turn=0;S.webbed=new Set();",
+            "    S.cells=Array.from({length:64},()=>({open:true,type:'gem',color:choose(COLORS),special:null,payload:null,hp:0,timer:0,kind:null,scout:null}));",
+            "    shuffle();S.bossHp=135;S.bossRage=false;S.info='BOSS: Alpha Scorpion. Tail Strike кожні 3 ходи.';redraw();",
+            "  }",
+            "  function start(){",
+            "    bg();S.hp=100;S.shield=0;S.energy=0;S.turn=0;S.moves=32;S.key=false;S.exit=false;",
+            "    S.evolution='base';S.dna={red:0,green:0,blue:0};S.relics=[];S.chooseEvolution=false;S.mode='board';S.scout=false;S.selected=-1;",
+            "    S.stats={moves:0,kills:0,explored:0,damage:0,maxCascade:0};S.modalButtons=[];",
+            "    beginExplore();",
+            "  }",
+            "  function reveal(id){",
+            "    const c=S.cells[id];if(c.open)return; c.open=true;S.reveals++;S.stats.explored++;",
+            "    playSfx('reveal');",
+            "    const p=c.payload;",
+            "    if(p==='key'){c.type='key';S.key=true;S.info='Ключ знайдено! Шукай вихід.';return;}",
+            "    if(p==='exit'){c.type='exit';S.exit=true;S.info='Вихід відкрито! Ще потрібен ключ.';return;}",
+            "    if(p==='bomb'){c.type='bomb';c.timer=3;S.info='Бомба! Через 3 ходи вибух.';return;}",
+            "    if(p==='chest'){c.type='gem';c.color=choose(COLORS);S.hp=Math.min(100,S.hp+12);S.energy=Math.min(3,S.energy+1);S.info='Скриня: +12 HP, +1 Reveal.';return;}",
+            "    if(p==='relic'){c.type='gem';c.color=choose(COLORS);S.shield=Math.min(50,S.shield+10);S.relics.push('Beetle Shell');S.info='Знайдено Beetle Shell: +10 Shield.';return;}",
+            "    if(p&&p.startsWith('enemy:')){c.type='enemy';c.kind=p.split(':')[1];c.hp=c.kind==='spider'?28:45;S.info='Ворог прокинувся! Red матчі завдають шкоди.';return;}",
+            "    c.type='gem';c.color=choose(COLORS);",
+            "  }",
+            "  function hurt(n){playSfx('hit');const block=Math.min(S.shield,n);S.shield-=block;S.hp=Math.max(0,S.hp-(n-block));if(n-block)S.info=`Удар: -${n-block} HP`;}",
+            "  function enemyDamage(n){",
+            "    if(S.phase===2){S.bossHp=Math.max(0,S.bossHp-n);S.stats.damage+=n;if(S.bossHp<=68&&!S.bossRage){S.bossRage=true;S.info='Alpha Scorpion: RAGE PHASE!';}return;}",
+            "    for(const c of S.cells)if(c.type==='enemy'){",
+            "      c.hp-=n;S.stats.damage+=n;",
+            "      if(c.hp<=0){c.type='gem';c.color=choose(COLORS);c.kind=null;S.stats.kills++;}",
+            "    }",
+            "    if(S.phase===1)S.eliteHp=Math.max(0,...S.cells.filter(c=>c.kind==='elite').map(c=>c.hp));",
+            "  }",
+            "  function applyMatches(gs){",
+            "    const matched=new Set(gs.flatMap(g=>g.ids));",
+            "    for(const g of gs){",
+            "      if(S.dna[g.col]!==undefined)S.dna[g.col]+=Math.max(1,g.len-2);",
+            "      if(g.col==='red'){enemyDamage(13*Math.max(1,Math.floor(g.len/3)));if(S.evolution==='venom')enemyDamage(7)}",
+            "      if(g.col==='green'&&S.evolution==='silk')S.shield=Math.min(50,S.shield+8);",
+            "      if(g.col==='blue'&&S.evolution==='arcane')S.energy=Math.min(3,S.energy+1);",
+            "      if(g.col==='purple')S.energy=Math.min(3,S.energy+1+Number(S.relics.includes('Moth Dust')));",
+            "    }",
+            "    if(S.phase===0){",
+            "      let frontier=[];",
+            "      for(const id of matched)for(const j of [id-8,id+8,id-1,id+1])if(j>=0&&j<64&&adjacent(j,id)&&!S.cells[j].open&&!frontier.includes(j))frontier.push(j);",
+            "      let n=Math.max(...gs.map(g=>g.len))>=5?3:Math.max(...gs.map(g=>g.len))===4?2:1;",
+            "      while(n--&&frontier.length)reveal(frontier.splice(Math.floor(Math.random()*frontier.length),1)[0]);",
+            "    }",
+            "    for(const id of matched){for(const j of [id-8,id+8,id-1,id+1]){",
+            "      if(j<0||j>=64||!adjacent(j,id)||!S.cells[j].open)continue;",
+            "      const c=S.cells[j];if(c.type==='bomb'){c.type='gem';c.color=choose(COLORS);S.info='Бомбу нейтралізовано!';}",
+            "      if(c.type==='enemy'){c.hp-=8;if(c.hp<=0){c.type='gem';c.color=choose(COLORS);c.kind=null;S.stats.kills++;}}",
+            "      if(S.webbed.has(j))S.webbed.delete(j);",
+            "    }}",
+            "    return matched;",
+            "  }",
+            "  function rocket(id,clear){",
+            "    const c=S.cells[id],row=R(id),col=C(id);",
+            "    if(c.special==='rocketH')for(let x=0;x<8;x++)clear.add(ix(row,x));",
+            "    if(c.special==='rocketV')for(let y=0;y<8;y++)clear.add(ix(y,col));",
+            "    for(const j of clear){const t=S.cells[j];if(!t.open)reveal(j);else if(t.type==='enemy'){t.hp-=22;if(t.hp<=0){t.type='gem';t.color=choose(COLORS);t.kind=null;S.stats.kills++;}}else if(t.type==='bomb'){t.type='gem';t.color=choose(COLORS)}}",
+            "  }",
+            "  function gravity(){",
+            "    for(let col=0;col<8;col++){let row=7;while(row>=0){",
+            "      if(!gem(ix(row,col))){row--;continue;}",
+            "      let end=row,start=row;while(start>0&&gem(ix(start-1,col)))start--;",
+            "      let stack=[];for(let r=end;r>=start;r--){let x=S.cells[ix(r,col)];if(x.color||x.special)stack.push({color:x.color,special:x.special});}",
+            "      let write=end;for(const piece of stack){S.cells[ix(write,col)].color=piece.color;S.cells[ix(write,col)].special=piece.special;write--;}",
+            "      while(write>=start){S.cells[ix(write,col)].color=choose(COLORS);S.cells[ix(write,col)].special=null;write--;}",
+            "      row=start-1;",
+            "    }}",
+            "  }",
+            "  function solve(preferred=-1){",
+            "    let cascade=0;",
+            "    while(cascade<12){const gs=groups();if(!gs.length)break;cascade++;",
+            "      const matched=applyMatches(gs),clear=new Set(matched),created=new Map();",
+            "      for(const g of gs)if(g.len>=4){const at=g.ids.includes(preferred)?preferred:g.ids[Math.floor(g.len/2)];created.set(at,{special:g.len>=5?'prism':g.dir==='h'?'rocketH':'rocketV',color:g.col});}",
+            "      for(const id of matched)if(S.cells[id].special&&S.cells[id].special!=='prism')rocket(id,clear);",
+            "      for(const id of created.keys())clear.delete(id);",
+            "      for(const id of clear){let c=S.cells[id];if(c.type==='gem'){c.color=null;c.special=null;}}",
+            "      for(const [id,p] of created){const c=S.cells[id];if(c.type==='gem'){c.color=p.color;c.special=p.special;}}",
+            "      gravity();preferred=-1;",
+            "    }",
+            "    if(cascade){playSfx('match');S.pulseFrames=15;}",
+            "    S.stats.maxCascade=Math.max(S.stats.maxCascade,cascade);",
+            "    if(cascade>1)S.info=`CASCADE ×${cascade}!`;",
+            "    if(!legalSwap()&&groups().length===0)shuffle();",
+            "  }",
+            "  function tick(){",
+            "    S.turn++;S.stats.moves++;S.moves--;",
+            "    for(const c of S.cells)if(c.type==='bomb'){c.timer--;if(c.timer<=0){c.type='gem';c.color=choose(COLORS);hurt(15);}}",
+            "    if(S.phase===0&&S.turn%3===0){const e=S.cells.filter(c=>c.type==='enemy');if(e.length)hurt(e.reduce((s,c)=>s+(c.kind==='spider'?5:8),0));}",
+            "    if(S.phase===1&&S.turn%3===0&&S.eliteHp>0)hurt(10);",
+            "    if(S.phase===2&&S.turn%(S.bossRage?2:3)===0&&S.bossHp>0)hurt(S.bossRage?17:12);",
+            "    if(S.phase===1&&S.turn%3===1&&S.eliteHp>0){const cand=S.cells.map((c,i)=>c.type==='gem'&&!S.webbed.has(i)?i:-1).filter(i=>i>=0);if(cand.length){S.webbed.add(choose(cand));S.info='Елітний павук сплів павутину на клітині.';}}",
+            "    if(S.hp<=0||S.moves<=0){S.mode='result';S.won=false;S.info=S.hp<=0?'Зразок загинув.':'Закінчилися ходи.';}",
+            "    if(S.phase===2&&S.bossHp<=0){S.mode='result';S.won=true;S.info='Експеримент завершено: Alpha Scorpion переможено!';}",
+            "    if(S.phase===0&&S.key&&S.exit){S.info='Key та Exit знайдені! Натисни Continue Room.';}",
+            "    if(S.evolution==='base'&&S.dna.red+S.dna.green+S.dna.blue>=5&&S.mode==='board'){S.mode='evolution';S.info='DNA готова до метаморфози. Обери еволюцію.';}",
+            "  }",
+            "  function performSwap(a,b){",
+            "    if(!gem(a)||!gem(b)||!adjacent(a,b))return;",
+            "    const A=S.cells[a],B=S.cells[b];",
+            "    if(A.special==='prism'||B.special==='prism'){",
+            "      const prism=A.special==='prism'?a:b,other=prism===a?b:a,col=S.cells[other].color;",
+            "      for(let i=0;i<64;i++)if(gem(i)&&(S.cells[i].color===col||i===prism)){S.cells[i].color=null;S.cells[i].special=null;}",
+            "      enemyDamage(20);gravity();solve();tick();S.selected=-1;redraw();return;",
+            "    }",
+            "    [A.color,B.color]=[B.color,A.color];[A.special,B.special]=[B.special,A.special];",
+            "    if(!groups().length){[A.color,B.color]=[B.color,A.color];[A.special,B.special]=[B.special,A.special];S.info='Обмін має створювати Match-3.';S.selected=-1;redraw();return;}",
+            "    solve(b);tick();S.selected=-1;redraw();",
+            "  }",
+            "  function addHud(){",
+            "    const light='58;38;20', small='72;48;26';",
+            "    txt(`HP  ${S.hp}/100`,1280,247,26,light);",
+            "    txt(`Shield  ${S.shield}/50`,1280,325,25,light);",
+            "    txt(`Moves  ${S.moves}`,1280,401,30,light);",
+            "    txt(`Reveal  ${S.energy}/3`,1280,486,27,light);",
+            "    txt(`Phase:  ${['Explore','Elite','Boss'][S.phase]}`,1280,573,25,light);",
+            "    txt('Specimen',1570,220,26,light);",
+            "    txt(({base:'Young Spider',venom:'Crimson Widow',silk:'Silk Architect',arcane:'Astral Weaver'})[S.evolution],1652,268,21,light);",
+            "    txt(S.evolution==='base'?'Collect DNA':S.evolution==='venom'?'Red: bonus dmg':S.evolution==='silk'?'Green: shield':'Blue: reveal',1655,306,15,small);",
+            "    txt(`RED   ${S.dna.red}/5`,1658,365,21,'131;32;32');",
+            "    txt(`GREEN  ${S.dna.green}/5`,1658,406,21,'29;104;56');",
+            "    txt(`BLUE  ${S.dna.blue}/5`,1658,446,21,'41;82;133');",
+            "    txt(`Relics: ${S.relics.length}`,1550,580,23,light);",
+            "    if(S.relics.length)txt(S.relics.join(' · ').slice(0,28),1540,646,16,light);",
+            "    txt('Scout',1280,756,24,light);",
+            "    txt('Continue Room',1580,756,24,light);",
+            "    txt('New Run',1260,872,20,light);",
+            "    txt('Sound '+(S.sound?'ON':'OFF'),1463,872,20,light);",
+            "    txt('How to Play',1650,872,20,light);",
+            "    txt(S.info.slice(0,85),1305,960,18,light);",
+            "    txt(`Reveal ${S.reveals}/8`,1720,946,18,small);",
+            "    txt(S.phase===2?`Boss ${S.bossHp}/135`:S.phase===1?`Elite ${S.eliteHp}/65`:`Key ${S.key?'✓':'✕'} · Exit ${S.exit?'✓':'✕'}`,1720,982,16,small);",
+            "  }",
+            "  function modal(){",
+            "    if(S.mode==='board')return;",
+            "    const m=S.mode;",
+            "    spr('SpecimenPanel',255,284,950,452,'Modal',0);",
+            "    if(m==='evolution'){",
+            "      txt('EVOLUTION — Обери форму',460,320,39,'65;37;23','Modal',10);",
+            "      txt('Crimson Widow',329,465,29,'128;35;41','Modal',10);",
+            "      txt('Silk Architect',650,465,29,'33;105;54','Modal',10);",
+            "      txt('Astral Weaver',949,465,29,'43;90;137','Modal',10);",
+            "      txt('Red = damage',355,512,23,'65;37;23','Modal',10);",
+            "      txt('Green = shield',676,512,23,'65;37;23','Modal',10);",
+            "      txt('Blue = reveal',978,512,23,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:300,y:450,w:275,h:145,action:'venom'},{x:615,y:450,w:280,h:145,action:'silk'},{x:930,y:450,w:280,h:145,action:'arcane'}];",
+            "    }else if(m==='relic'){",
+            "      txt('REWARD — Обери одну реліквію',398,320,37,'65;37;23','Modal',10);",
+            "      txt('Beetle Shell',328,470,29,'65;37;23','Modal',10);txt('+15 Shield',339,520,24,'65;37;23','Modal',10);",
+            "      txt('Moth Dust',645,470,29,'65;37;23','Modal',10);txt('+Purple Reveal',638,520,23,'65;37;23','Modal',10);",
+            "      txt('Venom Sac',964,470,29,'65;37;23','Modal',10);txt('Red +6 damage',948,520,24,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:300,y:440,w:280,h:150,action:'Beetle Shell'},{x:610,y:440,w:290,h:150,action:'Moth Dust'},{x:926,y:440,w:290,h:150,action:'Venom Sac'}];",
+            "    }else if(m==='help'){",
+            "      txt('HOW TO PLAY',530,330,40,'65;37;23','Modal',10);",
+            "      txt('1. Міняй сусідні фішки, щоб зібрати три однакові.',319,420,24,'65;37;23','Modal',10);",
+            "      txt('2. Матч поруч із павутиною відкриває клітини.',319,465,24,'65;37;23','Modal',10);",
+            "      txt('3. Red = damage, Purple = Reveal; Scout коштує 3.',319,510,24,'65;37;23','Modal',10);",
+            "      txt('4. Знайди Key + Exit, пройди Elite і Boss.',319,555,24,'65;37;23','Modal',10);",
+            "      txt('Натисни тут, щоб продовжити.',452,660,25,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:250,y:280,w:960,h:460,action:'close'}];",
+            "    }else{",
+            "      txt(S.won?'EXPERIMENT COMPLETE':'EXPERIMENT FAILED',360,340,44,'65;37;23','Modal',10);",
+            "      txt(`Moves: ${S.stats.moves} | Cells: ${S.stats.explored} | Kills: ${S.stats.kills}`,346,444,26,'65;37;23','Modal',10);",
+            "      txt(`Evolution: ${S.evolution} | Max Cascade ×${S.stats.maxCascade}`,346,492,25,'65;37;23','Modal',10);",
+            "      txt('Натисни на екран, щоб почати новий run',357,628,27,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:250,y:280,w:960,h:460,action:'restart'}];",
+            "    }",
+            "  }",
+            "  function redraw(){",
+            "    clearObjects(['Cell','Piece','Enemy','EvoText']);",
+            "    // Modal uses duplicated specimen art; it is re-created below.",
+            "    if(S.modalPanel)rs.markObjectForDeletion(S.modalPanel);S.modalPanel=null;",
+            "    for(let i=0;i<64;i++){",
+            "      let p=POS(i),c=S.cells[i];",
+            "      spr('Cell',p.x,p.y,SZ,SZ,'Tiles',i,c.open?1:0);",
+            "      if(!c.open){if(c.scout)txt(c.scout,p.x+7,p.y+36,12,'240;225;181','Labels',i);continue;}",
+            "      if(c.type==='gem'){",
+            "        let obj=spr('Piece',p.x+5,p.y+4,SZ-10,SZ-9,'Pieces',i,GEM[c.color]??0);",
+            "        if(c.special==='prism')obj.setAnimationIndex(10);",
+            "        obj.__original={x:p.x+5,y:p.y+4,w:SZ-10,h:SZ-9};",
+            "        if(c.special==='rocketH'||c.special==='rocketV')txt(c.special==='rocketH'?'↔':'↕',p.x+26,p.y+23,37,'252;248;220','Labels',i);",
+            "      } else if(c.type==='enemy'){",
+            "        spr('Enemy',p.x+5,p.y+3,SZ-9,SZ-7,'Pieces',i,c.kind==='scorpion'?1:0);",
+            "        txt(String(Math.max(0,c.hp)),p.x+25,p.y+68,17,'142;24;32','Labels',i);",
+            "      } else if(c.type==='bomb'){",
+            "        spr('Piece',p.x+3,p.y+2,SZ-6,SZ-5,'Pieces',i,6);",
+            "        txt(String(c.timer),p.x+68,p.y+65,25,'225;30;40','Labels',i);",
+            "      } else if(c.type==='key'){spr('Piece',p.x+6,p.y+2,SZ-11,SZ-7,'Pieces',i,7);}",
+            "      else if(c.type==='exit'){spr('Piece',p.x+3,p.y+2,SZ-8,SZ-7,'Pieces',i,8);}",
+            "      if(S.webbed.has(i))txt('✳',p.x+30,p.y+12,43,'190;201;183','Labels',i+100);",
+            "    }",
+            "    if(S.phase===2){spr('Enemy',1540,695,100,100,'UI',12,1);} // boss portrait outside board",
+            "    addHud();",
+            "    if(S.mode!=='board'){",
+            "      S.modalPanel=spr('SpecimenPanel',255,284,950,452,'Modal',0);",
+            "      // modal() only writes text & hitboxes, panel already placed.",
+            "      modalText();",
+            "    }",
+            "    S.dirty=false;",
+            "  }",
+            "  function modalText(){",
+            "    if(S.mode==='board')return;",
+            "    const m=S.mode;",
+            "    if(m==='evolution'){",
+            "      txt('METAMORPHOSIS — ОБЕРИ ФОРМУ',380,329,40,'65;37;23','Modal',10);",
+            "      txt('Crimson Widow',332,458,29,'135;31;44','Modal',10);txt('Red +damage',345,506,22,'65;37;23','Modal',10);",
+            "      txt('Silk Architect',651,458,29,'33;111;56','Modal',10);txt('Green +shield',655,506,22,'65;37;23','Modal',10);",
+            "      txt('Astral Weaver',946,458,29,'43;90;137','Modal',10);txt('Blue +Reveal',957,506,22,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:300,y:430,w:275,h:155,action:'venom'},{x:610,y:430,w:290,h:155,action:'silk'},{x:930,y:430,w:285,h:155,action:'arcane'}];",
+            "    }else if(m==='relic'){",
+            "      txt('НАГОРОДА — ОБЕРИ РЕЛІКВІЮ',386,328,40,'65;37;23','Modal',10);",
+            "      txt('Beetle Shell',328,454,29,'65;37;23','Modal',10);txt('+15 Shield',337,502,23,'65;37;23','Modal',10);",
+            "      txt('Moth Dust',649,454,29,'65;37;23','Modal',10);txt('Purple +Reveal',625,502,22,'65;37;23','Modal',10);",
+            "      txt('Venom Sac',960,454,29,'65;37;23','Modal',10);txt('Red +damage',948,502,22,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:300,y:430,w:275,h:155,action:'Beetle Shell'},{x:610,y:430,w:290,h:155,action:'Moth Dust'},{x:930,y:430,w:285,h:155,action:'Venom Sac'}];",
+            "    }else if(m==='help'){",
+            "      txt('ЯК ГРАТИ',511,330,43,'65;37;23','Modal',10);",
+            "      txt('Match-3 поруч із павутиною відкриває приховані клітини.',314,419,25,'65;37;23','Modal',10);",
+            "      txt('Red б’є ворогів, Purple заряджає Scout (3 Reveal).',314,466,24,'65;37;23','Modal',10);",
+            "      txt('Знайди Key та Exit; потім пройди Elite і Boss.',314,512,24,'65;37;23','Modal',10);",
+            "      txt('Натисни на вікно, щоб закрити.',470,637,24,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:250,y:284,w:950,h:452,action:'close'}];",
+            "    }else{",
+            "      txt(S.won?'EXPERIMENT COMPLETE':'EXPERIMENT FAILED',343,335,44,'65;37;23','Modal',10);",
+            "      txt(`Moves ${S.stats.moves}  |  Cells ${S.stats.explored}  |  Kills ${S.stats.kills}`,334,457,26,'65;37;23','Modal',10);",
+            "      txt(`Evolution: ${S.evolution}   |   Max cascade ×${S.stats.maxCascade}`,330,513,25,'65;37;23','Modal',10);",
+            "      txt('Клікни, щоб почати новий run.',403,634,25,'65;37;23','Modal',10);",
+            "      S.modalButtons=[{x:250,y:284,w:950,h:452,action:'restart'}];",
+            "    }",
+            "  }",
+            "  function clicked(x,y,rect){return x>=rect.x&&x<=rect.x+rect.w&&y>=rect.y&&y<=rect.y+rect.h}",
+            "  function handle(x,y){",
+            "    if(S.mode==='evolution'){const hit=S.modalButtons.find(b=>clicked(x,y,b));if(hit){S.evolution=hit.action;playSfx('evolve');S.mode='board';S.info='Метаморфоза завершена.';redraw();}return;}",
+            "    if(S.mode==='relic'){const hit=S.modalButtons.find(b=>clicked(x,y,b));if(hit){S.relics.push(hit.action);if(hit.action==='Beetle Shell')S.shield=Math.min(50,S.shield+15);S.mode='board';if(S.phase===0)beginElite();else beginBoss();}return;}",
+            "    if(S.mode==='help'){S.mode='board';redraw();return;}",
+            "    if(S.mode==='result'){start();return;}",
+            "    const buttons=[",
+            "      {x:1190,y:725,w:305,h:94,action:'scout'},",
+            "      {x:1504,y:725,w:345,h:94,action:'continue'},",
+            "      {x:1193,y:835,w:193,h:95,action:'new'},",
+            "      {x:1405,y:835,w:193,h:95,action:'sound'},",
+            "      {x:1613,y:835,w:235,h:95,action:'help'}];",
+            "    const b=buttons.find(b=>clicked(x,y,b));",
+            "    if(b){",
+            "      if(b.action==='scout'){if(S.energy>=3&&S.phase===0){S.scout=true;S.info='Scout: натисни приховану клітину.'}else S.info='Scout коштує 3 Reveal.';}",
+            "      if(b.action==='continue'){if(S.phase===0&&S.key&&S.exit){S.mode='relic'}else if(S.phase===1&&S.eliteHp<=0)S.mode='relic';else S.info='Спочатку заверши ціль поточної кімнати.';}",
+            "      if(b.action==='new'){start();return;}",
+            "      if(b.action==='sound'){S.sound=!S.sound;}",
+            "      if(b.action==='help'){S.mode='help';}",
+            "      redraw();return;",
+            "    }",
+            "    const c=Math.floor((x-GRID_X)/PITCH),r=Math.floor((y-GRID_Y)/PITCH);",
+            "    if(r<0||r>7||c<0||c>7)return;",
+            "    const i=ix(r,c),p=POS(i);if(x>p.x+SZ||y>p.y+SZ)return;",
+            "    if(!S.cells[i].open){",
+            "      if(S.scout){S.scout=false;S.energy=0;const payload=S.cells[i].payload;S.cells[i].scout=(payload||'safe').split(':')[0];S.info='Scout: '+S.cells[i].scout+'. Клітину ще не відкрито.';redraw();}",
+            "      else S.info='Збери Match-3 біля прихованої клітини.';",
+            "      return;",
+            "    }",
+            "    if(!gem(i)){S.info='Ця клітина заблокована. Обійди перешкоду.';redraw();return;}",
+            "    if(S.selected<0){S.selected=i;S.info='Тепер вибери сусідню фішку.';redraw();return;}",
+            "    if(S.selected===i){S.selected=-1;redraw();return;}",
+            "    if(!adjacent(S.selected,i)){S.selected=i;redraw();return;}",
+            "    performSwap(S.selected,i);",
+            "  }",
+            "  if(!S.started){S.started=true;S.sound=true;start();}",
+            "  // Just-released avoids repeated actions while held. Works for mouse and touch simulation.",
+            "  if(input.isMouseButtonReleased(rs,'Left')){",
+            "    const mx=input.getCursorX(rs,'',0),my=input.getCursorY(rs,'',0);",
+            "    handle(mx,my);",
+            "  }",
+            "  if(S.dirty)redraw();",
+            "})();"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "BG",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Tiles",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Frame",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Pieces",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Buttons",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Labels",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Modal",
+          "renderingType": "",
+          "visibility": true,
+          "effects": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": []
+    }
+  ],
+  "externalEvents": [],
+  "tests": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
